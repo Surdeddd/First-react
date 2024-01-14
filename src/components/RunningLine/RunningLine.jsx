@@ -13,7 +13,7 @@ const RunningLine = () =>{
     return(
         <div className={classes.main}>
             <div className={classes.Text}>
-                <h  data-aos="zoom-in" data-aos-duration="1800">С нами работают</h>
+                <h1 data-aos="zoom-in" data-aos-duration="1800">С нами работают</h1>
                 <p  data-aos="zoom-in" data-aos-duration="1900">Десятки компаний доверяют нам самое ценное, что у них есть в интернете – свои сайты. Мы делаем всё, чтобы наше сотрудничество было долгим.</p>
             </div>
             <div className={classes.LogosContainer}>

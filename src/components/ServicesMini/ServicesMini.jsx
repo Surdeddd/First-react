@@ -20,7 +20,7 @@ const ServicesMini = ( )=> {
                         <img style={{marginLeft:"-50px"}} src={bg} alt={bg}/>
                         <img style={{marginLeft:"-70px" , marginTop:"-18px"} } src={icon1} alt={icon1}/>
                         <div className={classes.IteamHeaderMain}>
-                            <h>От 1ч</h>
+                            <h1>От 1ч</h1>
                             <p style={{opacity:'0.7'}}>Настройка событий GA в интернет-магазине</p>
                         </div>
                     </div>
@@ -28,7 +28,7 @@ const ServicesMini = ( )=> {
                         <img style={{marginLeft:"-50px"}} src={bg} alt={bg}/>
                         <img style={{marginLeft:"-70px" , marginTop:"-18px"} } src={icon2} alt={icon2}/>
                         <div className={classes.IteamHeaderMain}>
-                            <h>От 20ч</h>
+                            <h1>От 20ч</h1>
                             <p style={{opacity:'0.7'}}>Разработка мобильной версии сайта</p>
                         </div>
 
@@ -37,7 +37,7 @@ const ServicesMini = ( )=> {
                         <img style={{marginLeft:"-50px"}} src={bg} alt={bg}/>
                         <img style={{marginLeft:"-70px" , marginTop:"-18px"} } src={icon3} alt={icon3}/>
                         <div className={classes.IteamHeaderMain}>
-                            <h>От 8ч</h>
+                            <h1>От 8ч</h1>
                             <p style={{opacity:'0.7'}}>Интеграция модуля оплаты </p>
                         </div>
                     </div>

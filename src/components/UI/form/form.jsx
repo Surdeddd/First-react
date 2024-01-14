@@ -104,7 +104,7 @@ const Form = () => {
             <img src={up} alt={up} className={classes.SvgUp} />
             <div className={classes.mainContent}>
                 <div className={classes.Contacts}>
-                    <h data-aos="fade-up" data-aos-duration="1400">Оставить заявку на поддержку сайта</h>
+                    <h1 data-aos="fade-up" data-aos-duration="1400">Оставить заявку на поддержку сайта</h1>
                     <p data-aos="fade-up" data-aos-duration="1500" style={{ opacity: 0.7 }}>Срочно нужна поддержка сайта? Ваша команда не успевает справиться самостоятельно или предыдущий подрядчик не справился с работой? Тогда вам точно к нам! Просто оставьте заявку и наш менеджер с вами свяжется!</p>
                     <div data-aos="fade-up" data-aos-duration="1600" className={classes.phone}>
                         <img alt={phone} src={phone} style={{ marginRight: 18, opacity: 0.5 }} />8 800 222-26-73
@@ -123,7 +123,7 @@ const Form = () => {
                                 setName(e.target.value);
                                 localStorage.setItem("name", e.target.value);
                             }}
-                            autocomplete={"off"}
+                            autoComplete={"off"}
                         />
                     </div>
                     <div data-aos="fade-up" data-aos-duration="1900" className={classes.form1}>
@@ -136,7 +136,7 @@ const Form = () => {
                                 setNumber(e.target.value);
                                 localStorage.setItem("number", e.target.value);
                             }}
-                            autocomplete={"off"}
+                            autoComplete={"off"}
                         />
                     </div>
                     <div data-aos="fade-up" data-aos-duration="2000" className={classes.form1}>
@@ -149,7 +149,7 @@ const Form = () => {
                                 setEmail(e.target.value);
                                 localStorage.setItem("email", e.target.value);
                             }}
-                            autocomplete={"off"}
+                            autoComplete={"off"}
                         />
                     </div>
                     <div data-aos="fade-up" data-aos-duration="2100" className={classes.form2}>
@@ -161,7 +161,7 @@ const Form = () => {
                                 setMessage(e.target.value);
                                 localStorage.setItem("message", e.target.value);
                             }}
-                            autocomplete={"off"}
+                            autoComplete={"off"}
                         />
                     </div>
                     <div data-aos="fade-up" data-aos-duration="2200" className={classes.checkbox}>

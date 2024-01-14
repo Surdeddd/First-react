@@ -14,7 +14,7 @@ const Support = () =>{
                 <img src={laptop} alt={laptop} className={classes.laptop}/>
             </div>
             <div className={classes.ContainerText}>
-                <h data-aos="fade-up" data-aos-duration="1400">Экспертиза в Drupal, опыт 14 лет!</h>
+                <h1 data-aos="fade-up" data-aos-duration="1400">Экспертиза в Drupal, опыт 14 лет!</h1>
                 <div className={classes.infoGrid}>
                     <div data-aos="fade-up" data-aos-duration="1500" className={classes.info}>
                         <p style={{opacity: 0.7}}>Только системный подход – контроль версий, резервирование и тестирование!</p>

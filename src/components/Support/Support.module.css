@@ -90,7 +90,7 @@
         align-items: start;
         margin-left: 15px;
     }
-    >h{
+    >h1{
         padding-bottom: 50px;
         width: min(100%, 480px);
         font-family: Montserrat;

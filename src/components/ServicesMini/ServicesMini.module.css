@@ -62,7 +62,7 @@
         .IteamHeaderMain{
             display: flex;
             flex-direction: column;
-            >h{
+            >h1{
                 white-space: nowrap;
                 font-family: Montserrat;
                 font-size: 32px;

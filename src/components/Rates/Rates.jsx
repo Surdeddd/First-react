@@ -22,7 +22,7 @@ const Rates = () => {
         <div className={classes.Main}>
             <img src={bg} alt={bg} className={classes.MainSvg} />
             <div className={classes.Text}>
-                <h data-aos="zoom-in" data-aos-duration="1500">Тарифы</h>
+                <h1 data-aos="zoom-in" data-aos-duration="1500">Тарифы</h1>
             </div>
             <div className={classes.Swiper}>
                 <Slider/>

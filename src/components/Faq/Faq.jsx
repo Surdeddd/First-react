@@ -28,7 +28,7 @@ const Faq = ()=>{
     return (
         <div className={classes.main}>
             <div data-aos="fade-up" data-aos-duration="1500"  className={classes.Text}>
-                <h>FAQ</h>
+                <h1>FAQ</h1>
             </div>
             <div data-aos="fade-up" data-aos-duration="1700" className={classes.Container}>
                 <div className={classes.textContainer}>
