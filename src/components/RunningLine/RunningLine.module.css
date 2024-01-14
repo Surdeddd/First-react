@@ -1,0 +1,118 @@
+.main {
+    margin-top: 250px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.Text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    >h{
+        color:  #050C33;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin-bottom: 10px;
+    }
+    >p{
+        justify-content: center;
+        align-items: center;
+        max-width: 740px;
+        color: #050C33;
+        text-align: center;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 22px;
+    }
+}
+.LogosContainer {
+    width: 100%;
+    margin-top: 30px;
+    overflow: hidden;
+    position: relative;
+
+}
+.Logos {
+    width: 200%;
+    display: flex;
+    animation: marquee 5s linear infinite;
+    >span{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+.Logos2 {
+    width: 200%;
+    display: flex;
+    animation: marquee2 5s linear infinite;
+    >span{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media (max-width: 1024px) {
+    .Logos, .Logos2 {
+        width: 400%;
+    }
+}
+@media (max-width: 585px){
+    .Logos, .Logos2 {
+        width: 500%;
+    }
+}
+@media (max-width: 450px){
+    .Logos, .Logos2 {
+        width: 600%;
+    }
+}
+.card{
+    display: flex;
+    width: 291px;
+    height: 155px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 5px;
+    border: 1px solid #E5E5E5;
+    background: #FFF;
+    margin: 0 20px;
+    @media (max-width: 768px){
+        width: 251px;
+        height: 115px;
+    }
+    @media (max-width: 425px){
+        width: 201px;
+        height: 85px;
+        >img{
+            width: 150px;
+            height: 70px;
+        }
+    }
+
+}
+
+@keyframes marquee {
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-50%);
+    }
+}
+@keyframes marquee2 {
+    0%{
+        transform: translateX(-50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
