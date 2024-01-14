@@ -42,7 +42,7 @@
     height: 100%;
     margin-bottom: 60px;
     @media (max-width: 1200px){
-        display: none;
+        display: none !important;
     }
 }
 
