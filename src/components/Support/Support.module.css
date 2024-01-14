@@ -87,7 +87,7 @@
         align-items: center;
     }
     @media (max-width:610px ){
-        align-items: start;
+        align-items: flex-start;
         margin-left: 15px;
     }
     >h1{

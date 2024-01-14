@@ -15,7 +15,7 @@ const Header = (props) => {
                 <video autoPlay={true} muted={true} loop={true}  playsInline={true} className={classes.BackgroundVideo}>
                     <source src={video} type="video/mp4" />
                 </video>
-                <img src={Druplicon} alt="description of image" className={classes.OverlayImage}/>
+                <img src={Druplicon} alt={Druplicon}  className={classes.OverlayImage}/>
                 <div className={classes.HelperHeader}>
                     <NavBar
                         menuItems={menuItems}

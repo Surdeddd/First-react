@@ -14,7 +14,7 @@ useEffect(()=>{
             <div className={classes.Text}>
                 <h1 data-aos="fade-up"  data-aos-duration="1200">Поддержка сайтов на Drupal</h1>
                 <p data-aos="fade-up"  data-aos-duration="1300" style={{opacity:'0.8'}}>Сопровождение и поддержка сайтов на CMS Drupal любых версий и запущенности</p>
-                <a data-aos="fade-up" data-aos-duration="1400" >Тарифы</a>
+                <a href="#" data-aos="fade-up" data-aos-duration="1400" >Тарифы</a >
             </div>
             <div className={classes.infoText}>
                 <div data-aos="fade-up" data-aos-duration="1400" className={classes.item}>

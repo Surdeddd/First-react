@@ -1,4 +1,4 @@
-import React, {useRef, useEffect, useState} from "react";
+import React, {useState} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import classes from "./slider.module.css";
 import icon from "../../images/icons4/Vector.svg"

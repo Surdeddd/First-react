@@ -116,7 +116,7 @@ const Rates = () => {
             <div className={classes.Info}>
                 <p data-aos="zoom-in" data-aos-duration="1600" style={{opacity: 0.5}}>Вам не подходят наши тарифы? Оставьте заявку и мы предложим вам индивидуальные условия!</p>
                 <button>
-                    <a data-aos="zoom-in" data-aos-duration="1700">Получить индивидуальный тариф</a>
+                    <p data-aos="zoom-in" data-aos-duration="1700">Получить индивидуальный тариф</p>
                 </button>
             </div>
             <CustomModal isOpen={isModalOpen} onClose={closeModal} />

@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import { CSSTransition, Transition, TransitionGroup } from 'react-transition-group';
 import classes from './NavBar.module.css';
 import '../../../styles/reset.css';
@@ -85,7 +85,7 @@ const NavBar = (props) => {
                                 handleSubMenuClose();
                             }}
                         >
-                            <a className={`${index === 0 ? classes.active : ''} ${item.options ? classes.withOptions : ''}`}>
+                            <a href="#" className={`${index === 0 ? classes.active : ''} ${item.options ? classes.withOptions : ''}`}>
                                 {item.label}
                             </a>
                             <TransitionGroup>
@@ -197,7 +197,7 @@ const NavBar = (props) => {
                                         handleSubMenuToggle(index, item.options);
                                     }}
                                 >
-                                    <a
+                                    <a href="#"
                                         className={`${index === 0 ? classes.active : ''} ${item.options ? classes.withOptions : ''}`}
                                     >
                                         {item.label}
