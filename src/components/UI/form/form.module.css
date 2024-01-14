@@ -139,9 +139,6 @@
             width: 270px;
         }
         >input{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             color: #FFF;
             font-family: Montserrat;
             font-size: 14px;
@@ -151,6 +148,7 @@
             width: 90%;
         }
         >input::placeholder{
+            margin-top: 5px !important;
             color: #FFF;
             opacity: 0.8;
         }
@@ -176,9 +174,6 @@
             width: 270px;
         }
         >input{
-            display: flex;
-            align-items: center;
-            justify-content: center;
             color: #FFF;
             font-family: Montserrat;
             font-size: 14px;
@@ -188,6 +183,7 @@
             width: 90%;
         }
         >input::placeholder{
+            margin-top: 5px !important;
             color: #FFF;
             opacity: 0.8;
         }

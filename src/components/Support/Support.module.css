@@ -1,12 +1,12 @@
 .Main{
     background: linear-gradient(261deg, rgba(255, 255, 255, 0.28) -114.85%, rgba(255, 255, 255, 0.00) 69.04%), #040613;
-    height: 900px;
+    height: 900px !important;
     margin-top: -200px;
     @media (max-width:1000px ){
-        height: 1100px;
+        height: 1100px!important ;
     }
     @media (max-width:610px ){
-        height: 1300px;
+        height: 1300px !important;
     }
 }
 .MainSvg{
