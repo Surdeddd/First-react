@@ -2,6 +2,7 @@
     background: linear-gradient(261deg, rgba(255, 255, 255, 0.28) -114.85%, rgba(255, 255, 255, 0.00) 69.04%), #040613;
     height: 900px !important;
     margin-top: -200px;
+    overflow: hidden;
     @media (max-width:1000px ){
         height: 1100px!important ;
     }
@@ -16,6 +17,7 @@
     margin-top: -90px;
     width: 923px;
     height: 1053px;
+    overflow: hidden;
     @media (max-width:1000px ){
         margin-top: 200px !important;
     }
@@ -49,7 +51,7 @@
 }
 .laptop{
     position: absolute;
-    left: 0 !important;
+    left: -25px;
     margin-top: 500px;
     max-width: 660px!important;
     max-height: 517px!important;
@@ -130,3 +132,19 @@
         }
     }
 }
+@media not all and (min-resolution:.001dpcm)and (-webkit-min-device-pixel-ratio:0) and (min-resolution: .001dpcm) {
+    @media{ .safari_only {
+        .Main {
+            margin-top: -500px;
+            @media (max-width: 1000px) {
+                margin-top: -200px;
+            }
+        }
+
+        .laptop {
+            position: absolute;
+            left: -20px;
+        }
+    }
+}}
+

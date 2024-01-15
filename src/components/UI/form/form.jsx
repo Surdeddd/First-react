@@ -136,7 +136,15 @@ const Form = () => {
                                 setNumber(e.target.value);
                                 localStorage.setItem("number", e.target.value);
                             }}
+                            onKeyPress={(e) => {
+                                // Обработчик onKeyPress для предотвращения ввода нецифровых символов
+                                const isDigit = /\d/.test(e.key);
+                                if (!isDigit) {
+                                    e.preventDefault();
+                                }
+                            }}
                             autoComplete={"off"}
+                            pattern="\d*"
                         />
                     </div>
                     <div data-aos="fade-up" data-aos-duration="2000" className={classes.form1}>
