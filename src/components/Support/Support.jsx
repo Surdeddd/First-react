@@ -1,7 +1,7 @@
 import React, {useEffect} from "react";
 import classes from "./Support.module.css";
 import bg from "../../images/icons3/face.svg"
-import laptop from "../../images/icons3/laptop-min.svg"
+import laptop from "../../images/icons3/laptop.svg"
 import Aos from "aos";
 const Support = () =>{
     useEffect(()=>{
