@@ -23,6 +23,7 @@ const Header = (props) => {
                         locale={locale}
                         languageOptions={languageOptions}
                     />
+
                     <HeaderContent/>
                 </div>
             </div>
