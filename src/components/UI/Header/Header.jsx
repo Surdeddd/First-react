@@ -12,7 +12,7 @@ const Header = (props) => {
     return (
         <div className={classes.Header}>
             <div className={classes.Video}>
-                <video autoPlay={true} muted={true} loop={true}  playsInline={true} className={classes.BackgroundVideo}>
+                <video autoPlay={true} muted={true} loop={true}  playsInline={true} preload="auto" className={classes.BackgroundVideo}>
                     <source src={video} type="video/mp4" />
                 </video>
                 <img src={Druplicon} alt={Druplicon}  className={classes.OverlayImage}/>

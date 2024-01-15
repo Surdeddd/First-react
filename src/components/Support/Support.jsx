@@ -11,7 +11,7 @@ const Support = () =>{
         <div className={classes.Main}>
             <img src={bg} alt={bg} className={classes.MainSvg}/>
             <div className={classes.Container}>
-                <img src={laptop} alt={laptop} className={classes.laptop}/>
+                <img src={laptop} alt={laptop} className={classes.laptop} loading="eager"/>
             </div>
             <div className={classes.ContainerText}>
                 <h1 data-aos="fade-up" data-aos-duration="1400">Экспертиза в Drupal, опыт 14 лет!</h1>

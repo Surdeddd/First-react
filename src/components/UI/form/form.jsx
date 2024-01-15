@@ -21,77 +21,54 @@ const Form = () => {
     const [error, setError] = useState("");
     const [showError, setShowError] = useState(false);
 
-    function handleSubmit(e) {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         e.stopPropagation();
 
-        if (!name || !number || !email || !message) {
-            setError("Пожалуйста, заполните все поля ");
-            setShowError(true);
-            setTimeout(() => {
-                setShowError(false);
-            }, 5000);
-            return;
-        }
+        try {
+            if (!name || !number || !email || !message) {
+                throw new Error("Пожалуйста, заполните все поля");
+            }
 
-        if (isChecked === false) {
-            setError("Пожалуйста, дайте согласия на обработку персональных данных ");
-            setShowError(true);
-            setTimeout(() => {
-                setShowError(false);
-            }, 5000);
-            return;
-        }
-//сайт formcarry
-        fetch(apiURL, {
-            method: 'POST',
-            headers: {
-                "Accept": "application/json",
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({ name, number, email, message })
-        })
-            .then(response => response.json())
-            .then(response => {
-                if (response.code === 200) {
-                    alert("Мы получили ваш запрос, спасибо!");
-                    setName("");
-                    setNumber("");
-                    setEmail("");
-                    setMessage("");
-                    setIsChecked(false);
-                } else if (response.code === 422 ) {
-                    setShowError(true);
-                    setTimeout(() => {
-                        setShowError(false);
-                    }, 5000);
-                    setError(response.message);
+            if (!isChecked) {
+                throw new Error("Пожалуйста, дайте согласия на обработку персональных данных");
+            }
 
-                }
-                else if(response.code === 429){
-                    setShowError(true);
-                    setTimeout(() => {
-                        setShowError(false);
-                    }, 3000);
-                    setError("Слишком много запросов. Пожалуйста, попробуйте позже.");
-                }
-                else {
-                    setShowError(true);
-                    setTimeout(() => {
-                        setShowError(false);
-                    }, 5000);
-                    setError(response.message);
-                }
-            })
-            .catch(error => {
-                setError(error.message ? error.message : error);
+            //сайт formcarry
+            const response = await fetch(apiURL, {
+                method: 'POST',
+                headers: {
+                    "Accept": "application/json",
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({ name, number, email, message })
+            });
+
+            const responseData = await response.json();
+
+            if (response.ok) {
+                alert("Мы получили ваш запрос, спасибо!");
+                setName("");
+                setNumber("");
+                setEmail("");
+                setMessage("");
+                setIsChecked(false);
+            } else {
                 setShowError(true);
                 setTimeout(() => {
                     setShowError(false);
-                }, 3000);
-            })
+                }, 5000);
+                setError(responseData.message || "Произошла ошибка при отправке запроса");
+            }
+        } catch (error) {
+            setShowError(true);
+            setTimeout(() => {
+                setShowError(false);
+            }, 3000);
+            setError(error.message || "Произошла ошибка");
+        }
+    };
 
-    }
 
 
 
